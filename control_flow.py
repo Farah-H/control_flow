@@ -1,10 +1,13 @@
 import random
 
-# age taken as input
-age = int(input('What is your age?'))
+
 # movie_rating randomly selected and printed
 movie_rating = random.choice(['U', 'PG', 12, 15, 18])
 print(movie_rating)
+
+# age taken as input
+age = int(input('What is your age?'))
+
 
 
 # control flow based on age
