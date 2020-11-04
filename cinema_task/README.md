@@ -39,7 +39,22 @@ elif more_conditions:
 else:
     do_something
 ```
+- `while` loops are not in regular use, however you do see it being used for monitoring.
+- we have a keywords `break` and `continue` to help control the flow of our loop 
 
+```python
+# user prompt to increment while loop
+user_prompt = True
 
+while user_prompt:
+    # takes age input from user 
+    age = input('Please enter your age.')
+    if age.isdigit() and int(age) < 117:
+        print('Thank you for providing your age.')
+        # ending the loop
+        user_prompt = False
+    else:
+        print('Please provide age in digits.')
+```
 
 

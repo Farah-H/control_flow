@@ -19,6 +19,12 @@ print(f'OMG {name}, you are {age} years old so you were born in {birth_year}!')
 birth_month = input('What is your birth month? Please enter in the format MM')
 birth_day = input('What day is your birthday? Please enter in the format DD')
 
-if birth_month > 
-# print out amt of hours the person has lived (optional)
+if int(birth_month) > time.month():
+    print(f'Your birthday hasn\'nt happened yet! You will be {age + 1} in {birth_month}.')
+elif birth_month = time.month() and birth_day > time.day():
+    print(f'Your birthday hasn\'nt happened yet! You will be {age + 1} in {birth_day - time.day()} days!')
+else:
+    print('Happy belated Birthday!!')
 
+# print out amt of hours the person has lived (optional)
+hours_lived = datetime.today() - dat
