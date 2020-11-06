@@ -24,7 +24,7 @@ for _ in list_names:
 print(list_names_lower)
 # find if the list of names has an even number of items 
 
-if len(list_names) // 2 == 0:
+if len(list_names) % 2 == 0:
     print('This list contains an even number of items.')
 else:
     print('This list contains an odd number of items.')
